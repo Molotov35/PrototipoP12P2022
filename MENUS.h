@@ -1,14 +1,13 @@
 #include <iostream>
 #include <cstdlib>
 
-#include "LISTAR USUARIOS.h"
 
 using namespace std;
 
 class Menu
 {
 	public:
-		void MenuInicial()
+		int MenuInicial()
 		{
 			int opc;
 			system ("cls");
@@ -20,23 +19,6 @@ class Menu
 			cout<<"\t\t[0]. Salir\n";
 			cout<<"\n\t\tIngrese su opcion: ";
 			cin>>opc;
-			switch (opc) {
-			case 1:
-				usuarios lista;
-				lista.menuListarUsuarios();
-				break;
-
-			case 2:
-				//menuRegistrarUsuario();
-				break;
-
-			case 3:
-				//menuIniciarSesion();
-				break;
-
-			case 0:
-				exit;
-			}
-
+			return opc;
 		}
 };
