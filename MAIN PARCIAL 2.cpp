@@ -4,8 +4,10 @@
 #include "LISTAR USUARIOS.h"
 #include "MENUS.h"
 
-using namespace std;
-
+using namespace std;	
+	
+	
+	
 int main()
 {
 	int encendido=1;
@@ -17,11 +19,12 @@ int main()
 		cout << opc;
 		switch (opc) {
 			case 1:
-				usuarios lista;
+				users lista;
 				lista.menuListarUsuarios();
 				encendido =1;
 			case 2:
-				//menuRegistrarUsuario();
+				//users registro;
+				//registro.menuRegistrarUsuario()
 				break;
 	
 			case 3:
